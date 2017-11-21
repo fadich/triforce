@@ -1,0 +1,65 @@
+.tf-bg {
+  position: fixed;
+  margin: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #333333;
+  opacity: 0.65;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9;
+
+  .tf-wrap {
+    display: flex;
+    width: 125px;
+    height: 125px;
+    //min-width: 125px;
+    //min-height: 125px;
+    flex-direction: column;
+
+    .row {
+      height: 50%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      width: 100%;
+
+      .triangle {
+        border-left: 40px solid transparent;
+        border-right: 40px solid transparent;
+        border-bottom: 60px solid black;
+        opacity: 1;
+
+        &-yellow {
+          border-bottom: 60px solid yellow;
+        }
+        &-red {
+          border-bottom: 60px solid red;
+        }
+        &-blue {
+          border-bottom: 60px solid blue;
+        }
+        &-green {
+          border-bottom: 60px solid green;
+        }
+        &-palegreen {
+          border-bottom: 60px solid palegreen;
+        }
+        &-purple {
+          border-bottom: 60px solid purple;
+        }
+        &-cornflowerblue {
+          border-bottom: 60px solid cornflowerblue;
+        }
+      }
+    }
+  }
+}
+
+body.ft-loading {
+  overflow: hidden;
+}
